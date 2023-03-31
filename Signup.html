@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="authentication()">
+    <div class="wrapper">
+        <header>Signup</header>
+        <form action="Login.html">
+          <div class="field Mobile Number">
+            <div class="input-area">  
+              <input type="text" id="text" placeholder="Email" name="Phone">
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Email can't be blank</div>
+          </div>
+          <div class="field Mobile Number">
+            <div class="input-area">  
+              <input type="tel" id="phone" placeholder="UNIQUE ID (NSTI AAYOG)" name="phone" pattern="[0-9]{5}[0-9]{2}[0-9]{3}">
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Unique Id can't be blank</div>
+          </div>
+          <div class="field password">
+            
+            <div class="input-area">
+              <input type="password" placeholder="Password">
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Password can't be blank</div>
+          </div>
+          <div class="field Mobile Number">
+            <div class="input-area">  
+              <input type="text" id="text" placeholder="Address" name="phone">
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Address can't be blank</div>
+          </div>
+         
+          <input type="submit" value="Signup" onclick="authentication()"/>
+      
+        </form>
+        <div class="sign-txt">Already member? <a href="Login.html">Login</a></div>
+      </div>
+    
+    
+  </body>
+</html>
